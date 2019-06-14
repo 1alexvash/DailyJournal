@@ -1,0 +1,31 @@
+.Sign-in {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(black, 0.8);
+  width: 320px;
+  padding: 20px;
+  color: white;
+  @include responsive(640px, 640px) {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+  }
+  input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid black;
+    &:focus {
+      border-color: deepskyblue;
+    }
+    &[type="submit"] {
+      cursor: pointer;
+      background: linear-gradient(lighten(deepskyblue, 20%), deepskyblue);
+    }
+  }
+}

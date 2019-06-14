@@ -1,0 +1,51 @@
+.History {
+  background: lighten(yellow, 30%);
+  width: 768px;
+  padding: 20px;
+  box-shadow: 5px 5px 10px 0px black;
+  margin: 50px auto;
+  @include responsive(800px) {
+    width: 100%;
+  }
+  .heading {
+    font-size: 36px;
+    padding: 0 0 20px 0;
+  }
+  .record {
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 5px 5px 15px 1px black;
+    .date {
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      img {
+        width: 36px;
+        margin: 0 10px 0 0;
+      }
+    }
+    .questions-list {
+      section {
+        margin: 20px 0;
+        .question {
+          margin: 0 0 10px 0;
+        }
+        .answer {
+          font-weight: normal;
+        }
+      }
+    }
+    .remove-record {
+      cursor: pointer;
+      border: 2px solid black;
+      padding: 4px 10px;
+      background: linear-gradient(lighten(red, 20%), red);
+      font-size: 12px;
+      color: white;
+    }
+  }
+
+  .history-is-empty {
+    color: deepskyblue;
+  }
+}

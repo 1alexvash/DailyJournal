@@ -1,0 +1,533 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  width: 100%;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+body:before {
+  content: "";
+  display: block;
+  background: url("../components/images/background-cover.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.Navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: white;
+  width: 960px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 10px 3px black;
+          box-shadow: 5px 5px 10px 3px black;
+  margin: 0 auto;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .Navbar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .Navbar {
+    display: block;
+  }
+  .Navbar div button {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    padding: 10px 0;
+    display: block;
+    border-bottom: 2px solid black;
+  }
+}
+
+.Navbar img {
+  width: 24px;
+  margin: 0 10px 0 0;
+}
+
+.Navbar img {
+  width: 24px;
+  margin: 0 10px;
+}
+
+.Navbar button {
+  cursor: pointer;
+  color: deepskyblue;
+  background: none;
+}
+
+.Navbar button img {
+  position: relative;
+  top: 4px;
+}
+
+.Homepage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  width: 320px;
+  padding: 20px;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .Homepage {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media (max-height: 640px) {
+  .Homepage {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.Homepage h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.Homepage h2 {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.Homepage ul {
+  margin: 20px 0;
+}
+
+.Homepage ul li {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.Homepage ul li img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.Homepage .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Homepage .buttons a:first-child button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#66d9ff), to(deepskyblue));
+  background: linear-gradient(#66d9ff, deepskyblue);
+}
+
+.Homepage .buttons a:last-child button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00e600), to(green));
+  background: linear-gradient(#00e600, green);
+}
+
+.Homepage .buttons a .button {
+  cursor: pointer;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.Sign-in {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  width: 320px;
+  padding: 20px;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .Sign-in {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media (max-height: 640px) {
+  .Sign-in {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.Sign-in input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.Sign-in input:focus {
+  border-color: deepskyblue;
+}
+
+.Sign-in input[type="submit"] {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#66d9ff), to(deepskyblue));
+  background: linear-gradient(#66d9ff, deepskyblue);
+}
+
+.Sign-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  width: 320px;
+  padding: 20px;
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .Sign-up {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media (max-height: 640px) {
+  .Sign-up {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.Sign-up input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.Sign-up input:focus {
+  border-color: deepskyblue;
+}
+
+.Sign-up input[type="submit"] {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00e600), to(green));
+  background: linear-gradient(#00e600, green);
+}
+
+.Settings {
+  width: 640px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 75px auto;
+}
+
+@media (max-width: 768px) {
+  .Settings {
+    width: 100%;
+  }
+}
+
+.Settings ul.list-of-questions {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .Settings ul.list-of-questions {
+    padding: 0;
+  }
+}
+
+.Settings ul.list-of-questions li {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  .Settings ul.list-of-questions li {
+    padding: 10px 0;
+  }
+}
+
+.Settings ul.list-of-questions li button {
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 4px 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff6666), to(red));
+  background: linear-gradient(#ff6666, red);
+  font-size: 12px;
+  color: white;
+}
+
+.Settings form.add-question {
+  margin: 50px 0;
+}
+
+.Settings form.add-question input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.Settings form.add-question input:focus {
+  border-color: deepskyblue;
+}
+
+.Settings form.add-question input[type="submit"] {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00e600), to(green));
+  background: linear-gradient(#00e600, green);
+}
+
+.delete-account-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid black;
+  padding: 20px 0 0 0;
+}
+
+.delete-account-form .dangerous-area {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.delete-account-form .delete-account {
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  border: 2px solid black;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff6666), to(red));
+  background: linear-gradient(#ff6666, red);
+  cursor: pointer;
+}
+
+.User-page {
+  width: 768px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 20px 5px black;
+          box-shadow: 0 0 20px 5px black;
+  margin: 75px auto;
+  background: white;
+}
+
+@media (max-width: 800px) {
+  .User-page {
+    width: 100%;
+  }
+}
+
+.User-page .fill-in-journal h1 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+
+.User-page .fill-in-journal .answer-daily-questions section {
+  margin: 10px 0;
+}
+
+.User-page .fill-in-journal .answer-daily-questions section label {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+.User-page .fill-in-journal .answer-daily-questions section textarea {
+  border: 2px solid black;
+  width: 100%;
+  resize: none;
+}
+
+.User-page .fill-in-journal .answer-daily-questions section textarea:focus {
+  border-color: deepskyblue;
+}
+
+.User-page .fill-in-journal .answer-daily-questions input[type="submit"] {
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid black;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00e600), to(green));
+  background: linear-gradient(#00e600, green);
+}
+
+.User-page .journal-is-already-filled {
+  font-size: 36px;
+  text-align: center;
+}
+
+.User-page .journal-is-already-filled a {
+  border-top: 2px solid black;
+  display: block;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 24px;
+  color: deepskyblue;
+}
+
+.History {
+  background: #ffff99;
+  width: 768px;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 10px 0px black;
+          box-shadow: 5px 5px 10px 0px black;
+  margin: 50px auto;
+}
+
+@media (max-width: 800px) {
+  .History {
+    width: 100%;
+  }
+}
+
+.History .heading {
+  font-size: 36px;
+  padding: 0 0 20px 0;
+}
+
+.History .record {
+  margin: 20px 0;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 15px 1px black;
+          box-shadow: 5px 5px 15px 1px black;
+}
+
+.History .record .date {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.History .record .date img {
+  width: 36px;
+  margin: 0 10px 0 0;
+}
+
+.History .record .questions-list section {
+  margin: 20px 0;
+}
+
+.History .record .questions-list section .question {
+  margin: 0 0 10px 0;
+}
+
+.History .record .questions-list section .answer {
+  font-weight: normal;
+}
+
+.History .record .remove-record {
+  cursor: pointer;
+  border: 2px solid black;
+  padding: 4px 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff6666), to(red));
+  background: linear-gradient(#ff6666, red);
+  font-size: 12px;
+  color: white;
+}
+
+.History .history-is-empty {
+  color: deepskyblue;
+}

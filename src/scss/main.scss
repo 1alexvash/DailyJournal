@@ -1,0 +1,26 @@
+@import "reset";
+@import "responsive";
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  &:before {
+    content: "";
+    display: block;
+    background: url("../components/images/background-cover.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+@import "components/Navbar";
+@import "components/Home-page";
+@import "components/Sign-in";
+@import "components/Sign-up";
+@import "components/Settings";
+@import "components/User-page";
+@import "components/History";

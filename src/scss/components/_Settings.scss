@@ -1,0 +1,67 @@
+.Settings {
+  width: 640px;
+  padding: 20px;
+  background: rgba(white, 0.8);
+  margin: 75px auto;
+  @include responsive(768px) {
+    width: 100%;
+  }
+  ul.list-of-questions {
+    padding: 20px;
+    @include responsive(768px) {
+      padding: 0;
+    }
+    li {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include responsive(768px) {
+        padding: 10px 0;
+      }
+      button {
+        cursor: pointer;
+        border: 2px solid black;
+        padding: 4px 10px;
+        background: linear-gradient(lighten(red, 20%), red);
+        font-size: 12px;
+        color: white;
+      }
+    }
+  }
+  form.add-question {
+    margin: 50px 0;
+    input {
+      margin: 10px 0;
+      padding: 10px;
+      border: 2px solid black;
+      &:focus {
+        border-color: deepskyblue;
+      }
+      &[type="submit"] {
+        cursor: pointer;
+        background: linear-gradient(lighten(green, 20%), green);
+      }
+    }
+  }
+}
+.delete-account-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid black;
+  padding: 20px 0 0 0;
+  .dangerous-area {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .delete-account {
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    border: 2px solid black;
+    background: linear-gradient(lighten(red, 20%), red);
+    cursor: pointer;
+  }
+}

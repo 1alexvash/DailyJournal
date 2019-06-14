@@ -1,0 +1,52 @@
+.User-page {
+  width: 768px;
+  padding: 20px;
+  box-shadow: 0 0 20px 5px black;
+  margin: 75px auto;
+  background: white;
+  @include responsive(800px) {
+    width: 100%;
+  }
+  .fill-in-journal {
+    h1 {
+      font-size: 24px;
+      margin: 0 0 20px 0;
+    }
+    .answer-daily-questions {
+      section {
+        margin: 10px 0;
+        label {
+          display: block;
+          margin: 0 0 10px 0;
+        }
+        textarea {
+          border: 2px solid black;
+          width: 100%;
+          resize: none;
+          &:focus {
+            border-color: deepskyblue;
+          }
+        }
+      }
+      input[type="submit"] {
+        cursor: pointer;
+        margin: 10px 0;
+        padding: 10px;
+        border: 2px solid black;
+        background: linear-gradient(lighten(green, 20%), green);
+      }
+    }
+  }
+  .journal-is-already-filled {
+    font-size: 36px;
+    text-align: center;
+    a {
+      border-top: 2px solid black;
+      display: block;
+      margin: 10px 0;
+      padding: 10px 0;
+      font-size: 24px;
+      color: deepskyblue;
+    }
+  }
+}
